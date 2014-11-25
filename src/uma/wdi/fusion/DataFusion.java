@@ -181,26 +181,26 @@ public class DataFusion
 		// STUDENT PROJECT TODO: DEFINE YOUR INPUT HERE!
 
 		// input 1: data and provenance id strings
-		String rootElementName = "movies";
-		String idDataPath = "/movies/movie/id";
-		String idProvPath = "/movies/provenance/id";
+		String rootElementName = "data";
+		String idDataPath = "/data/videogame/id";
+		String idProvPath = "/data/provenance/id";
 		
 		// input 2: a list of csv-files, with lists of pairs of (comma-separated) IDs
 		// (this is the output of Exercise 2, Identity Resolution)
 		Set<String> filesDuplicates = new HashSet<String>();
-		filesDuplicates.add("resources/movies/duplicates/matched-1-2.txt");
-		filesDuplicates.add("resources/movies/duplicates/matched-2-3.txt");
+		filesDuplicates.add("resources/videogames/duplicates/matched-1-2.txt");
+		filesDuplicates.add("resources/videogames/duplicates/matched-2-3.txt");
 		
 		// input 3: datasets (the same as for Exercise 2, BUT with provenance)
 		Set<String> filesData = new HashSet<String>();
-		filesData.add("resources/movies/datasets/full/movie_list1.xml");
-		filesData.add("resources/movies/datasets/full/movie_list2.xml");
-		filesData.add("resources/movies/datasets/full/movie_list3.xml");
+		filesData.add("resources/videogames/datasets/dbpedia.xml");
+		filesData.add("resources/videogames/datasets/giantbomb.xml");
+		filesData.add("resources/videogames/datasets/thegamesdb.xml");
 
 		// input 4: output files
-		String unionFn = "resources/movies/merged.xml";
-		String fnFusionReport = "resources/movies/fusion-report.txt";
-		String fnOutput = "resources/movies/fused.xml";
+		String unionFn = "resources/videogames/merged.xml";
+		String fnFusionReport = "resources/videogames/fusion-report.txt";
+		String fnOutput = "resources/videogames/fused.xml";
 
 		// *** Step 2 ***
 		// produce a "merged" dataset
@@ -212,21 +212,32 @@ public class DataFusion
 		// ** Important ** KEEP IDS UNCHANGED!
 
 		// input 5: gold standard file
-		String fnGold = "resources/movies/gold.xml";
+		String fnGold = "resources/videogames/gold.xml";
 		
 		// *** Step 4 ***
 		// STUDENT PROJECT TODO: define your conflict resolution functions (per attribute) here!
 		Map<String, AbstractResolutionFunction> rf = new HashMap<String, AbstractResolutionFunction>();
 		rf.put("title", new Vote());
-		rf.put("date", new MostRecent());
-		rf.put("gross", new Maximum());
-		rf.put("studio", new MostRecent(true));
-		rf.put("budget", new Average());
-		Map<String,Double> trust = new HashMap<String,Double>();
-		trust.put("movie_list1.xml", 1.0);
-		trust.put("movie_list2.xml", 2.0);
-		trust.put("movie_list3.xml", 3.0);
-		rf.put("director/name", new MostTrusted(trust,true));		
+		Map<String,Double> trustDesc = new HashMap<String,Double>();
+		trustDesc.put("dbpedia.xml", 1.0);
+		trustDesc.put("giantbomb.xml", 0.0);
+		trustDesc.put("thegamesdb.xml", 0.0);
+		rf.put("description", new MostTrusted(trustDesc,true));
+		Map<String,Double> trustRel = new HashMap<String,Double>();
+		trustRel.put("dbpedia.xml", 0.0);
+		trustRel.put("giantbomb.xml", 1.0);
+		trustRel.put("thegamesdb.xml", 0.0);
+		rf.put("release", new MostTrusted(trustRel,true));
+		rf.put("platform", new Vote());
+		rf.put("developer", new Vote());
+		rf.put("publisher", new Vote());
+		rf.put("mode", new Vote());
+		Map<String,Double> trustComp = new HashMap<String,Double>();
+		trustComp.put("dbpedia.xml", 1.0);
+		trustComp.put("giantbomb.xml", 0.0);
+		trustComp.put("thegamesdb.xml", 0.0);
+		rf.put("computingmedia", new MostTrusted(trustComp,true));
+			
 
 		// *** Step 5 ***
 		// fuse and compare to gold standard
