@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies xsi:noNamespaceSchemaLocation="C:/Users/Heiko/Documents/Lehre/WebDataIntegration/beispiele/movies/target.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<movie>
+		<id>2-9178</id>
+		<title>127 Hours</title>
+		<studio>Independent</studio>
+		<genre/>
+		<budget>18</budget>
+		<gross>60.73</gross>
+		<date>1955-07-07</date>
+	</movie>
+	<movie>
+		<id>2-9179</id>
+		<title>A Nightmare on Elm Street</title>
+		<studio>Warner Brothers</studio>
+		<genre>Horror</genre>
+		<budget>37</budget>
+		<gross>115.66</gross>
+		<date>1985-02-11</date>
+	</movie>
+	<movie>
+		<id>2-9180</id>
+		<title>Alice in Wonderland</title>
+		<director>
+			<name>other director</name>
+		</director>
+		<studio>Disney</studio>
+		<genre>Adventure</genre>
+		<budget>210</budget>
+		<gross>1024.39</gross>
+		<date>2010-07-01</date>
+	</movie>
+	<provenance>
+		<id>prov02</id>
+		<source>movie_list2.xml</source>
+		<date>08 Mar 2009 00:00:00 GMT</date>
+	</provenance>
+</movies>

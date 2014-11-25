@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?><movies>
+  <provenance>
+		<id>prov03</id>
+		<source>movie_list3.xml</source>
+		<date>01 Jan 2010 00:00:00 GMT</date>
+	</provenance>
+  <provenance>
+		<id>prov02</id>
+		<source>movie_list2.xml</source>
+		<date>08 Mar 2009 00:00:00 GMT</date>
+	</provenance>
+  <provenance>
+		<id>prov01</id>
+		<source>movie_list.xml</source>
+		<date>01 Jan 2012 00:00:00 GMT</date>
+	</provenance>
+  <movie>
+    <id>
+      <value provenance="prov02">2-9178</value>
+      <value provenance="prov03">3-9178</value>
+      <value provenance="prov01">1-9178</value>
+    </id>
+    <studio>
+      <value provenance="prov02">Independent</value>
+      <value provenance="prov03">Independent</value>
+      <value provenance="prov01">Independent</value>
+    </studio>
+    <genre>
+      <value provenance="prov01">Adventure</value>
+    </genre>
+    <budget>
+      <value provenance="prov02">18</value>
+      <value provenance="prov03">18</value>
+      <value provenance="prov01">18</value>
+    </budget>
+    <title>
+      <value provenance="prov02">127 Hours</value>
+      <value provenance="prov03">127 Hours</value>
+      <value provenance="prov01">127 Hours</value>
+    </title>
+    <gross>
+      <value provenance="prov02">60.73</value>
+      <value provenance="prov03">60.73</value>
+      <value provenance="prov01">60.73</value>
+    </gross>
+    <director>
+      <name>
+        <value provenance="prov03">Alexander Mackendrick</value>
+      </name>
+    </director>
+    <date>
+      <value provenance="prov02">1955-07-07</value>
+      <value provenance="prov03">1955-01-01</value>
+    </date>
+    <oscar/>
+    <actors>
+      <actor provenance="prov03">
+				<name>Alec Guinness</name>
+			</actor>
+      <actor provenance="prov03">
+				<name>Cecil Parker</name>
+			</actor>
+      <actor provenance="prov03">
+				<name>Herbert Lom</name>
+			</actor>
+      <actor provenance="prov03">
+				<name>Peter Sellers</name>
+			</actor>
+    </actors>
+  </movie>
+  <movie>
+    <id>
+      <value provenance="prov02">2-9179</value>
+      <value provenance="prov01">1-9179</value>
+      <value provenance="prov03">3-9179</value>
+    </id>
+    <studio>
+      <value provenance="prov02">Warner Brothers</value>
+      <value provenance="prov01">Warner Bros.</value>
+    </studio>
+    <genre>
+      <value provenance="prov02">Horror</value>
+      <value provenance="prov01">Horror</value>
+    </genre>
+    <budget>
+      <value provenance="prov02">37</value>
+      <value provenance="prov01">35</value>
+    </budget>
+    <title>
+      <value provenance="prov02">A Nightmare on Elm Street</value>
+      <value provenance="prov01">A Nightmare on Elm Street</value>
+      <value provenance="prov03">A Nightmare on Elm Street</value>
+    </title>
+    <gross>
+      <value provenance="prov02">115.66</value>
+      <value provenance="prov01">115.66</value>
+    </gross>
+    <director>
+      <name>
+        <value provenance="prov03">Trey Parker</value>
+      </name>
+    </director>
+    <date>
+      <value provenance="prov02">1985-02-11</value>
+      <value provenance="prov03">1985-02-11</value>
+    </date>
+    <oscar/>
+    <actors>
+      <actor provenance="prov03">
+				<name>Kristen Miller</name>
+			</actor>
+      <actor provenance="prov03">
+				<name>Matt Stone</name>
+			</actor>
+      <actor provenance="prov03">
+				<name>Trey Parker</name>
+			</actor>
+    </actors>
+  </movie>
+  <movie>
+    <id>
+      <value provenance="prov01">1-9180</value>
+      <value provenance="prov03">3-9180</value>
+      <value provenance="prov02">2-9180</value>
+    </id>
+    <studio>
+      <value provenance="prov01">Disney</value>
+      <value provenance="prov02">Disney</value>
+    </studio>
+    <genre>
+      <value provenance="prov01">Adventure</value>
+      <value provenance="prov02">Adventure</value>
+    </genre>
+    <budget>
+      <value provenance="prov01">200</value>
+      <value provenance="prov02">210</value>
+    </budget>
+    <title>
+      <value provenance="prov01">Alice in Wonderland</value>
+      <value provenance="prov03">Alice in Wonderland</value>
+      <value provenance="prov02">Alice in Wonderland</value>
+    </title>
+    <gross>
+      <value provenance="prov01">1024.39</value>
+      <value provenance="prov02">1024.39</value>
+    </gross>
+    <director>
+      <name>
+        <value provenance="prov02">other director</value>
+      </name>
+    </director>
+    <date>
+      <value provenance="prov03">2006-07-01</value>
+      <value provenance="prov02">2010-07-01</value>
+    </date>
+    <oscar/>
+    <actors/>
+  </movie>
+</movies>

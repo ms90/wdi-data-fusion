@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<movies xsi:noNamespaceSchemaLocation="C:/Users/Heiko/Documents/Lehre/WebDataIntegration/beispiele/movies/target.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<movie>
+		<id>3-9178</id>
+		<title>127 Hours</title>
+		<studio>Independent</studio>
+		<genre/>
+		<budget>18</budget>
+		<gross>60.73</gross>
+		<director>
+			<name>Alexander Mackendrick</name>
+		</director>
+		<actors>
+			<actor>
+				<name>Alec Guinness</name>
+			</actor>
+			<actor>
+				<name>Cecil Parker</name>
+			</actor>
+			<actor>
+				<name>Herbert Lom</name>
+			</actor>
+			<actor>
+				<name>Peter Sellers</name>
+			</actor>
+		</actors>
+		<date>1955-01-01</date>
+	</movie>
+	<movie>
+		<id>3-9179</id>
+		<title>A Nightmare on Elm Street</title>
+		<director>
+			<name>Trey Parker</name>
+		</director>
+		<actors>
+			<actor>
+				<name>Kristen Miller</name>
+			</actor>
+			<actor>
+				<name>Matt Stone</name>
+			</actor>
+			<actor>
+				<name>Trey Parker</name>
+			</actor>
+		</actors>
+		<date>1985-02-11</date>
+	</movie>
+	<movie>
+		<id>3-9180</id>
+		<title>Alice in Wonderland</title>
+		<date>2006-07-01</date>
+	</movie>
+	<provenance>
+		<id>prov03</id>
+		<source>movie_list3.xml</source>
+		<date>01 Jan 2010 00:00:00 GMT</date>
+	</provenance>
+</movies>
