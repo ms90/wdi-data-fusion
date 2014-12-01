@@ -189,7 +189,7 @@ public class DataFusion
 		// (this is the output of Exercise 2, Identity Resolution)
 		Set<String> filesDuplicates = new HashSet<String>();
 		filesDuplicates.add("resources/videogames/duplicates/matched-1-2.txt");
-		filesDuplicates.add("resources/videogames/duplicates/matched-2-3.txt");
+		filesDuplicates.add("resources/videogames/duplicates/matched-1-3.txt");
 		
 		// input 3: datasets (the same as for Exercise 2, BUT with provenance)
 		Set<String> filesData = new HashSet<String>();
@@ -213,7 +213,7 @@ public class DataFusion
 
 		// input 5: gold standard file
 		String fnGold = "resources/videogames/gold.xml";
-		
+		/*
 		// *** Step 4 ***
 		// STUDENT PROJECT TODO: define your conflict resolution functions (per attribute) here!
 		Map<String, AbstractResolutionFunction> rf = new HashMap<String, AbstractResolutionFunction>();
@@ -243,7 +243,7 @@ public class DataFusion
 		// fuse and compare to gold standard
 		runDataFusion(rf, idDataPath, fnGold, fnOutput, fnFusionReport);
 		
-		System.out.println("Fusion successfully finished");
+		System.out.println("Fusion successfully finished");*/
 		
 		// End logging time
         Long endTime = new Date().getTime();
