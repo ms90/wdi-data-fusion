@@ -31,7 +31,7 @@ public class PassItOn extends AbstractResolutionFunction
 	@Override
 	public Set<Pair> applyStrategy(Dataset ds, Node node, String path)
 	{
-		Set<Pair> result = getValueProvevancePairs(node, path);
+		Set<Pair> result = getValueProvenancePairs(node, path);
 		return result;
 	}
 }

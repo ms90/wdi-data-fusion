@@ -33,7 +33,7 @@ public class Maximum extends AbstractResolutionFunction
 	public Set<Pair> applyStrategy(Dataset ds, Node node, String path)
 	{
 		// get data to fuse:
-		Set<Pair> pairs = getValueProvevancePairs(node, path);
+		Set<Pair> pairs = getValueProvenancePairs(node, path);
 		
 		// select maximum
 		Set<Pair> result = new HashSet<Pair>();

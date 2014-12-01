@@ -213,37 +213,53 @@ public class DataFusion
 
 		// input 5: gold standard file
 		String fnGold = "resources/videogames/gold.xml";
-		/*
+		
 		// *** Step 4 ***
 		// STUDENT PROJECT TODO: define your conflict resolution functions (per attribute) here!
 		Map<String, AbstractResolutionFunction> rf = new HashMap<String, AbstractResolutionFunction>();
+		
 		rf.put("title", new Vote());
+		
 		Map<String,Double> trustDesc = new HashMap<String,Double>();
 		trustDesc.put("dbpedia.xml", 1.0);
 		trustDesc.put("giantbomb.xml", 0.0);
 		trustDesc.put("thegamesdb.xml", 0.0);
 		rf.put("description", new MostTrusted(trustDesc,true));
+		
 		Map<String,Double> trustRel = new HashMap<String,Double>();
 		trustRel.put("dbpedia.xml", 0.0);
 		trustRel.put("giantbomb.xml", 1.0);
 		trustRel.put("thegamesdb.xml", 0.0);
 		rf.put("release", new MostTrusted(trustRel,true));
+		
 		rf.put("platform", new Vote());
+		
 		rf.put("developer", new Vote());
+		
 		rf.put("publisher", new Vote());
+		
 		rf.put("mode", new Vote());
+		
 		Map<String,Double> trustComp = new HashMap<String,Double>();
 		trustComp.put("dbpedia.xml", 1.0);
 		trustComp.put("giantbomb.xml", 0.0);
 		trustComp.put("thegamesdb.xml", 0.0);
 		rf.put("computingmedia", new MostTrusted(trustComp,true));
+		
+		rf.put("genre/name", new Vote());
+		
+		Map<String,Double> trustGenreDesc = new HashMap<String,Double>();
+		trustComp.put("dbpedia.xml", 1.0);
+		trustComp.put("giantbomb.xml", 0.0);
+		trustComp.put("thegamesdb.xml", 0.0);
+		rf.put("genre/description", new MostTrusted(trustGenreDesc,true));
 			
 
 		// *** Step 5 ***
 		// fuse and compare to gold standard
 		runDataFusion(rf, idDataPath, fnGold, fnOutput, fnFusionReport);
 		
-		System.out.println("Fusion successfully finished");*/
+		System.out.println("Fusion successfully finished");
 		
 		// End logging time
         Long endTime = new Date().getTime();

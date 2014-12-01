@@ -51,7 +51,7 @@ public class Vote extends AbstractResolutionFunction
 		Set<Pair> result = new HashSet<Pair>();
 
 		// get data to fuse:
-		Set<Pair> pairs = getValueProvevancePairs(node, path);
+		Set<Pair> pairs = getValueProvenancePairs(node, path);
 		
 		// get value counts
 		Map<String,Integer> counts = new HashMap<String,Integer>();
