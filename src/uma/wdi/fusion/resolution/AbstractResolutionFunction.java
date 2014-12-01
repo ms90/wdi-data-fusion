@@ -71,7 +71,7 @@ public abstract class AbstractResolutionFunction
 	}
 	
 	// Get all set of value-provenance pairs from a node; to use in applyStrategy methods
-	public Set<Pair> getValueProvevancePairs(Node node, String path)
+	public Set<Pair> getValueProvenancePairs(Node node, String path)
 	{
 		return XMLUtils.getValueAttributePairs(node, path, XMLUtils.VALUE, XMLUtils.PROV);
 	}
