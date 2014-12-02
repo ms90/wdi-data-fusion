@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<data xsi:nonamespaceschemalocation="d:/uni/webdat~1/project/target.xsd" xmlns:xsi="http://www.w3.org/2001/xmlschema-instance">	<videogame>
+<data>
+	<provenance>
+		<id>prov03</id>
+		<source>thegamesdb.xml</source>
+		<date>28 Nov 2014 00:00:00 GMT+1</date>
+	</provenance>
+	<videogame>
 		<id>gdb2</id>
 		<title>crysis</title>
 		<release>2007-11-13</release>

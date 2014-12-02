@@ -30,6 +30,7 @@ import uma.wdi.fusion.resolution.Average;
 import uma.wdi.fusion.resolution.Maximum;
 import uma.wdi.fusion.resolution.MostRecent;
 import uma.wdi.fusion.resolution.MostTrusted;
+import uma.wdi.fusion.resolution.PassItOn;
 import uma.wdi.fusion.resolution.Vote;
 import uma.wdi.fusion.utils.XMLUtils;
 
@@ -182,8 +183,8 @@ public class DataFusion
 
 		// input 1: data and provenance id strings
 		String rootElementName = "data";
-		String idDataPath = "/data/videogame/id";
-		String idProvPath = "/data/provenance/id";
+		String idDataPath = "//videogame/id";
+		String idProvPath = "//provenance/id";
 		
 		// input 2: a list of csv-files, with lists of pairs of (comma-separated) IDs
 		// (this is the output of Exercise 2, Identity Resolution)
@@ -204,7 +205,7 @@ public class DataFusion
 
 		// *** Step 2 ***
 		// produce a "merged" dataset
-		boolean unionRes = runDataUnion(rootElementName, idDataPath, idProvPath, filesDuplicates, filesData, unionFn, fnFusionReport);
+//		boolean unionRes = runDataUnion(rootElementName, idDataPath, idProvPath, filesDuplicates, filesData, unionFn, fnFusionReport);
 		// if (!unionRes) return;
 
 		// *** Step 3 ***
@@ -217,43 +218,40 @@ public class DataFusion
 		// *** Step 4 ***
 		// STUDENT PROJECT TODO: define your conflict resolution functions (per attribute) here!
 		Map<String, AbstractResolutionFunction> rf = new HashMap<String, AbstractResolutionFunction>();
-		
 		rf.put("title", new Vote());
 		
-		Map<String,Double> trustDesc = new HashMap<String,Double>();
-		trustDesc.put("dbpedia.xml", 1.0);
-		trustDesc.put("giantbomb.xml", 0.0);
-		trustDesc.put("thegamesdb.xml", 0.0);
-		rf.put("description", new MostTrusted(trustDesc,true));
+		Map<String,Double> trust = new HashMap<String,Double>();
+		trust.put("dbpedia.xml", 3.0);
+		trust.put("giantbomb.xml", 2.0);
+		trust.put("thegamesdb.xml", 1.0);
+		rf.put("description", new MostTrusted(trust,true));
 		
-		Map<String,Double> trustRel = new HashMap<String,Double>();
-		trustRel.put("dbpedia.xml", 0.0);
-		trustRel.put("giantbomb.xml", 1.0);
-		trustRel.put("thegamesdb.xml", 0.0);
-		rf.put("release", new MostTrusted(trustRel,true));
+		rf.put("release", new MostRecent());
 		
-		rf.put("platform", new Vote());
+		rf.put("platform", new PassItOn());
+		rf.put("developer", new PassItOn());
+		rf.put("publisher", new PassItOn());
 		
-		rf.put("developer", new Vote());
+		trust = new HashMap<String,Double>();
+		trust.put("dbpedia.xml", 3.0);
+		trust.put("giantbomb.xml", 2.0);
+		trust.put("thegamesdb.xml", 1.0);
+		rf.put("mode", new MostTrusted(trust,true));
 		
-		rf.put("publisher", new Vote());
+		trust = new HashMap<String,Double>();
+		trust.put("dbpedia.xml", 3.0);
+		trust.put("giantbomb.xml", 2.0);
+		trust.put("thegamesdb.xml", 1.0);
+		rf.put("computingmedia", new MostTrusted(trust,true));
 		
-		rf.put("mode", new Vote());
+		trust = new HashMap<String,Double>();
+		trust.put("dbpedia.xml", 3.0);
+		trust.put("giantbomb.xml", 2.0);
+		trust.put("thegamesdb.xml", 1.0);
+		rf.put("genre", new MostTrusted(trust,true));
 		
-		Map<String,Double> trustComp = new HashMap<String,Double>();
-		trustComp.put("dbpedia.xml", 1.0);
-		trustComp.put("giantbomb.xml", 0.0);
-		trustComp.put("thegamesdb.xml", 0.0);
-		rf.put("computingmedia", new MostTrusted(trustComp,true));
 		
-		rf.put("genre/name", new Vote());
 		
-		Map<String,Double> trustGenreDesc = new HashMap<String,Double>();
-		trustComp.put("dbpedia.xml", 1.0);
-		trustComp.put("giantbomb.xml", 0.0);
-		trustComp.put("thegamesdb.xml", 0.0);
-		rf.put("genre/description", new MostTrusted(trustGenreDesc,true));
-			
 
 		// *** Step 5 ***
 		// fuse and compare to gold standard

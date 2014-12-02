@@ -1,107 +1,409 @@
-<?xml version="1.0" encoding="UTF-8"?><movies>
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
   <provenance>
-		<id>prov03</id>
-		<source>movie_list3.xml</source>
-		<date>01 Jan 2010 00:00:00 GMT</date>
-	</provenance>
+    <id>prov02</id>
+    <source>giantbomb.xml</source>
+    <date>29 Nov 2014 00:00:00 GMT+1</date>
+  </provenance>
   <provenance>
-		<id>prov02</id>
-		<source>movie_list2.xml</source>
-		<date>08 Mar 2009 00:00:00 GMT</date>
-	</provenance>
+    <id>prov01</id>
+    <source>dbpedia.xml</source>
+    <date>30 Nov 2014 00:00:00 GMT+1</date>
+  </provenance>
   <provenance>
-		<id>prov01</id>
-		<source>movie_list1.xml</source>
-		<date>01 Jan 2010 00:00:00 GMT</date>
-	</provenance>
-  <movie>
+    <id>prov03</id>
+    <source>thegamesdb.xml</source>
+    <date>28 Nov 2014 00:00:00 GMT+1</date>
+  </provenance>
+  <videogame>
     <id>
-      <value provenance="prov02">2-9178</value>
-      <value provenance="prov03">3-9178</value>
-      <value provenance="prov01">1-9178</value>
+      <value provenance="prov01">dbp2954629</value>
+      <value provenance="prov03">gdb6706</value>
+      <value provenance="prov02">gbmb9471</value>
     </id>
-    <studio>
-      <value provenance="prov02">Independent</value>
-    </studio>
-    <genre>
-	      <value provenance="prov02">Comedy</value>
-	</genre>
-    <budget>
-      <value provenance="prov02">18</value>
-    </budget>
+    <mode>
+      <value provenance="prov00">singleplayer video game</value>
+      <value provenance="prov01">multiplayer video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov00">rom cartridge</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov03">2006-03-02</value>
+    </release>
+    <description>
+      <value provenance="prov01">children of mana, known in japan as seiken densetsu ds: children of mana (�?�剣�?説ds children of mana, seiken densetsu ds: chirudoren obu mana, lit. "holy sword legend ds: children of mana"), is a 2006 action role-playing game for the nintendo ds handheld game console, part of the mana series and, more specifically, of the world of mana project launched by square enix. children of mana is the first game of the world of mana and was developed by nex entertainment under the supervision of koichi ishii.in the middle of the island of illusia stands the famous tree of mana. several years ago, a great disaster took place at the base of the tree and many lives were lost, leaving the main characters as orphans. a brave young boy and girl used the sword of mana to save the world from disaster. now, years later, the main characters set out to investigate the details of the event that took so many loved ones away from them.it was released on march 2, 2006 in japan and was subsequently released on october 30, 2006, and january 12, 2007, in north america and europe, respectively. it received mixed reviews, with generally positive reviews in japan and negative ones in the united states.</value>
+    </description>
+    <publisher>
+      <value provenance="prov02">square enix</value>
+      <value provenance="prov02">nintendo</value>
+    </publisher>
+    <developer>
+      <value provenance="prov02">nex entertainment</value>
+    </developer>
     <title>
-      <value provenance="prov01">127 Hours</value>
+      <value provenance="prov01">children of mana</value>
+      <value provenance="prov03">children of mana</value>
+      <value provenance="prov02">children of mana</value>
     </title>
-    <gross>
-      <value provenance="prov02">60.73</value>
-    </gross>
-    <director>
-      <name>
-        <value provenance="prov03">Alexander Mackendrick</value>
-      </name>
-    </director>
-    <date>
-      <value provenance="prov02">1955-07-07</value>
-    </date>
-  </movie>
-  <movie>
-    <id>
-      <value provenance="prov02">2-9179</value>
-      <value provenance="prov01">1-9179</value>
-      <value provenance="prov03">3-9179</value>
-    </id>
-    <studio>
-      <value provenance="prov02">Warner Brothers</value>
-    </studio>
+    <platform>
+      <value provenance="prov01">nintendo ds</value>
+      <value provenance="prov03">nintendo ds</value>
+      <value provenance="prov02">nintendo ds</value>
+    </platform>
     <genre>
-      <value provenance="prov02">Horror</value>
+      <genre provenance="prov01">
+        <id>dbp2255337</id>
+        <name>action role-playing game</name>
+        <description>action role-playing games (abbreviated action rpg, action/rpg, or arpg) form a loosely defined sub-genre of role-playing video games that incorporate elements of action or action-adventure games, emphasizing real-time action where the player has direct control over characters, instead of turn-based or menu-based combat. these games often use combat systems similar to hack and slash or shooter games.</description>
+      </genre>
     </genre>
-    <budget>
-      <value provenance="prov02">37</value>
-    </budget>
-    <title>
-      <value provenance="prov02">A Nightmare on Elm Street</value>
-    </title>
-    <gross>
-      <value provenance="prov02">115.66</value>
-    </gross>
-    <director>
-      <name>
-        <value provenance="prov01">Trey Parker</value>
-      </name>
-    </director>
-    <date>
-      <value provenance="prov02">1986-02-11</value>
-    </date>
-  </movie>
-  <movie>
+  </videogame>
+<videogame>
+    <mode>
+      <value provenance="prov00">singleplayer video game</value>
+      <value provenance="prov01">multiplayer video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov01">rom cartridge</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov03">2001-08-13</value>
+    </release>
+    <description>
+      <value provenance="prov01">fortress is a tower defense strategy video game developed by pipe dream interactive and published by majesco games for the game boy advance (gba) handheld game console.</value>
+    </description>
+    <publisher>
+      <value provenance="prov01">majesco entertainment</value>
+    </publisher>
+    <developer>
+      <value provenance="prov01">pipe dream interactive</value>
+    </developer>
     <id>
-      <value provenance="prov01">1-9180</value>
-      <value provenance="prov03">3-9180</value>
-      <value provenance="prov02">2-9180</value>
+      <value provenance="prov01">dbp24628569</value>
+      <value provenance="prov03">gdb3432</value>
     </id>
-    <studio>
-      <value provenance="prov01">Disney</value>
-    </studio>
-    <genre>
-      <value provenance="prov01">Adventure</value>
-    </genre>
-    <budget>
-      <value provenance="prov01">200</value>
-    </budget>
     <title>
-      <value provenance="prov01">Alice in Wonderland</value>
+      <value provenance="prov01">fortress</value>
+      <value provenance="prov03">fortress</value>
     </title>
-    <gross>
-      <value provenance="prov01">1024.39</value>
-    </gross>
-    <director>
-      <name>
-        <value provenance="prov01">Alexander Mackendrick</value>
-      </name>
-    </director>
-    <date>
-      <value provenance="prov01">2006-07-01</value>
-    </date>
-  </movie>
-</movies>
+    <platform>
+      <value provenance="prov01">game boy advance</value>
+      <value provenance="prov03">nintendo game boy advance</value>
+    </platform>
+    <genre>
+      <genre provenance="prov01">
+        <id>dbp14571394</id>
+        <name>tower defense</name>
+        <description>tower defense is a subgenre of real-time strategy video games. the goal of tower defense games is to try to stop enemies from crossing a map by building traps to slow them down and towers which shoot at them as they pass. enemies and towers usually have varied abilities, costs, and upgrade prices. when an enemy is defeated, the player earns money or points, which are used to buy or upgrade towers, or upgrade the number of money or points that are earned, or even upgrade the rate at which they upgrade.the choice and positioning of the personal towers is the essential strategy of the game. many games, such as flash element tower defense, feature enemies that run through a "maze", which allows the player to strategically place towers for optimal effectiveness. however, some versions of the genre force the user to create the maze out of their own towers, such as desktop tower defense. some versions are a hybrid of these two types, with preset paths that can be modified to some extent by tower placement, or towers that can be modified by path placement.</description>
+      </genre>
+    </genre>
+  </videogame>
+  <videogame>
+    <mode>
+      <value provenance="prov01">single-player video game</value>
+      <value provenance="prov00">multi-player video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov00">rom cartridge</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov01">1994-03-25</value>
+    </release>
+    <description>
+      <value provenance="prov01">grind stormer, also known as v・v (ヴィ・ファイヴ, "vee five"), is a vertically forced scrolling shoot 'em up developed for the arcade by toaplan, and ported to the sega mega drive in 1993 by tengen.</value>
+    </description>
+    <publisher>
+      <value provenance="prov01">tengen</value>
+      <value provenance="prov02">tengen</value>
+    </publisher>
+    <developer>
+      <value provenance="prov02">toaplan co., ltd.</value>
+    </developer>
+    <id>
+      <value provenance="prov03">gdb4401</value>
+      <value provenance="prov01">dbp21544512</value>
+      <value provenance="prov02">gbmb5304</value>
+    </id>
+    <title>
+      <value provenance="prov03">grind stormer</value>
+      <value provenance="prov01">grind stormer</value>
+      <value provenance="prov02">grind stormer</value>
+    </title>
+    <platform>
+      <value provenance="prov03">sega genesis</value>
+      <value provenance="prov01">arcade game</value>
+      <value provenance="prov02">genesis</value>
+      <value provenance="prov02">arcade</value>
+    </platform>
+    <genre>
+      <genre provenance="prov01">
+        <id>dbp252981</id>
+        <name>shoot 'em up</name>
+        <description>shoot 'em up (also known as shmup or stg) is a subgenre of the shooter genre of video games.in a shoot 'em up, the player character engages in a lone assault, often in a spacecraft or aircraft, shooting large numbers of enemies while dodging their attacks. there is no consensus as to which design elements compose a shoot 'em up.[citation needed] some restrict the definition to games featuring spacecraft and certain types of character movement; others allow a broader definition including characters on foot and a variety of perspectives. shoot 'em ups call for fast reactions and for the player to memorise levels and enemy attack patterns. "bullet hell" games feature overwhelming numbers of enemy projectiles.the genre's origins can be traced back to spacewar!, one of the very earliest computer games, developed in 1961 and eventually released in amusement arcades in the early 1970s. however, tomohiro nishikado, creator of space invaders, is generally credited with inventing the genre. space invaders premiered in japanese arcades in 1978. shoot 'em ups were popular throughout the 1980s and early 1990s. in the mid-1990s, shoot 'em ups became a niche genre based on design conventions established in the 1980s, and increasingly catered to specialist enthusiasts, particularly in japan.</description>
+      </genre>
+    </genre>
+  </videogame>
+  <videogame>
+    <mode>
+      <value provenance="prov01">single-player video game</value>      
+      <value provenance="prov00">multi-player video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov01">megabit</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov03">1994-11-18</value>
+      <value provenance="prov01">1994-11-18</value>
+    </release>
+    <description>
+      <value provenance="prov01">hagane: the final conflict (鋼, hagane) is a 1994 side-scrolling action video game developed by caproduction and published by hudson for the super nintendo entertainment system. the game was released in japan on november 18, 1994, in north america in june of 1995 and in europe in 1995.</value>
+    </description>
+    <publisher>
+      <value provenance="prov01">hudson soft</value>
+    </publisher>
+    <developer/>
+    <id>
+      <value provenance="prov03">gdb1919</value>
+      <value provenance="prov01">dbp1387059</value>
+    </id>
+    <title>
+      <value provenance="prov03">haganefinal conflict</value>
+      <value provenance="prov01">haganefinal conflict</value>
+    </title>
+    <platform>
+      <value provenance="prov03">super nintendo (snes)</value>
+      <value provenance="prov01">super nintendo entertainment system</value>
+    </platform>
+    <genre>
+      <genre provenance="prov01">
+        <id>dbp5240581</id>
+        <name>side-scrolling video game</name>
+        <description>a side-scrolling game or side-scroller is a video game in which the gameplay action is viewed from a side-view camera angle, and the onscreen characters generally move from the left side of the screen to the right (or less commonly, right to left) to meet an objective. these games make use of scrolling computer display technology. the move from single-screen or flip-screen graphics to scrolling graphics, during the golden age of video arcade games and during third-generation consoles, would prove to be a pivotal leap in game design, comparable to the move to 3d graphics during the fifth generation.</description>
+      </genre>
+    </genre>
+  </videogame>
+  <videogame>
+    <mode>
+      <value provenance="prov01">multiplayer video game</value>
+      <value provenance="prov00">singleplayer video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov00">Cassette</value>
+      <value provenance="prov00">Floppy disk</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov00">1988-01-01</value>
+    </release>
+    <description>
+      <value provenance="prov01">microprose soccer is a soccer videogame published by microprose in 1988. the original commodore 64 version was developed by sensible software, with conversions carried out to other formats. it is the fore-runner of the 16-bit classic sensible soccer. in the united states the game was released under a title keith van eron's pro soccer.</value>
+    </description>
+    <publisher>
+      <value provenance="prov01">microprose</value>
+    </publisher>
+    <developer>
+      <value provenance="prov00">sensible software</value>
+    </developer>
+    <id>
+      <value provenance="prov03">gdb18457</value>
+      <value provenance="prov01">dbp14408916</value>
+    </id>
+    <title>
+      <value provenance="prov03">microprose soccer</value>
+      <value provenance="prov01">microprose soccer</value>
+    </title>
+    <platform>
+      <value provenance="prov01">zx spectrum</value>
+      <value provenance="prov00">amiga</value>
+      <value provenance="prov00">amstrad cpc</value>
+      <value provenance="prov00">atari st</value>
+      <value provenance="prov00">commodore 64</value>
+      <value provenance="prov00">dos</value>
+    </platform>
+    <genre>
+      <genre provenance="prov01">
+        <id>dbp10568</id>
+        <name>association football</name>
+        <description>association football, commonly known as football or soccer, is a sport played between two teams of eleven players with a spherical ball. it is played by 250 million players in over 200 countries, making it the world's most popular sport. the game is played on a rectangular field with a goal at each end. the object of the game is to score by using any part of the body besides the arms and hands to get the ball into the opposing goal.the goalkeepers are the only players allowed to touch the ball with their hands or arms while it is in play and then only in their penalty area. outfield players mostly use their feet to strike or pass the ball, but may use their head or torso to strike the ball instead. the team that scores the most goals by the end of the match wins. if the score is tied at the end of the game, either a draw is declared or the game goes into extra time and/or a penalty shootout depending on the format of the competition. the laws of the game were originally codified in england by the football association in 1863. association football is governed internationally by the international federation of association football (fifa; french: fédération internationale de football association) which organises a world cup every four years.</description>
+     </genre>
+    </genre>
+  </videogame>
+  <videogame>
+    <mode>
+      <value provenance="prov00">singleplayer video game</value>
+      <value provenance="prov01">multiplayer video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov01">rom cartridge</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov00">1992-01-01</value>
+    </release>
+    <description>
+      <value provenance="prov01">champions of europe is a traditional football simulation video game released for the sega master system in 1992 to coincide with the uefa euro 1992 football tournament. it was developed and published by tecmagik. it is a top-down football game that was the only official game of the tournament available for the master system. box artwork and in game screens feature the official logo of the tournament and the image of the official mascot, berni the bunni.</value>
+    </description>
+    <publisher>
+      <value provenance="prov01">tecmagik</value>
+    </publisher>
+    <developer>
+      <value provenance="prov01">tecmagik</value>
+    </developer>
+    <id>
+      <value provenance="prov01">dbp23918700</value>
+      <value provenance="prov03">gdb2714</value>
+    </id>
+    <title>
+      <value provenance="prov01">champions of europe</value>
+      <value provenance="prov03">champions of europe</value>
+    </title>
+    <platform>
+      <value provenance="prov01">master system</value>
+      <value provenance="prov03">sega master system</value>
+    </platform>
+    <genre>
+      <genre provenance="prov01">
+        <id>dbp387562</id>
+        <name>sports game</name>
+        <description>a sports game is a video game that simulates the practice of traditional sports. most sports have been recreated with a game, including team sports, athletics and extreme sports. some games emphasize actually playing the sport (such as the madden nfl series), whilst others emphasize strategy and organization (such as championship manager and out of the park baseball). some, such as need for speed, arch rivals and punch-out!!, satirize the sport for comic effect. this genre has been popular throughout the history of video games and is competitive, just like real-world sports. a number of game series feature the names and characteristics of real teams and players, and are updated annually to reflect real-world changes.</description>
+      </genre>
+    </genre>
+  </videogame>
+  <videogame>
+    <mode>
+      <value provenance="prov01">single-player video game</value>
+      <value provenance="prov00">multi-player video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov01">cd-rom</value>
+      <value provenance="prov00">dvd</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov01">2003-12-02</value>
+    </release>
+    <description>
+      <value provenance="prov01">armed and dangerous, often shortened to and, is a 2003 video game created by planet moon studios and released by lucasarts. it is a third-person action/adventure comedy shooter which parodies both other games and several other media such as the lord of the rings, star wars and monty python and the holy grail, using humorous in-game dialogue and cutscenes. the game features known actors and voice actors such as brian george as main hero roman, jeff bennett, john mariano and pat fraley as his sidekicks jonesy, rexus and q (respectively) and tony jay as villain king forge.</value>
+    </description>
+    <publisher>
+      <value provenance="prov01">activision</value>
+      <value provenance="prov01">lucasarts</value>
+    </publisher>
+    <developer>
+      <value provenance="prov00">planet moon studios</value>
+    </developer>
+    <id>
+      <value provenance="prov03">gdb2629</value>
+      <value provenance="prov01">dbp2005389</value>
+    </id>
+    <title>
+      <value provenance="prov03">armed and dangerous</value>
+      <value provenance="prov01">armed and dangerous</value>
+    </title>
+    <platform>
+      <value provenance="prov03">pc</value>
+      <value provenance="prov03">microsoft xbox</value>
+      <value provenance="prov01">microsoft windows</value>
+    </platform>
+    <genre>
+      <genre provenance="prov01">
+        <id>dbp25394701</id>
+        <name>third-person shooter</name>
+        <description>third-person shooter (tps) is a genre of 3d action games in which the player character is visible on-screen, and the gameplay consists primarily of shooting.</description>
+      </genre>
+    </genre>
+  </videogame>
+  <videogame>
+    <mode>
+      <value provenance="prov01">single-player video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov00">download</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov02">2008-06-04</value>
+      <value provenance="prov01">2008-06-04</value>
+    </release>
+    <description>
+      <value provenance="prov01">roogoo is a downloadable puzzle video game for the xbox live arcade and microsoft windows developed by spidermonk entertainment and published by southpeak interactive. it was released on june 4, 2008, and was released for windows-based pcs on june 12, 2008. the game is followed by roogoo twisted towers (wii) and roogoo attack (nintendo ds).</value>
+    </description>
+    <publisher>
+      <value provenance="prov02">southpeak interactive, llc</value>
+      <value provenance="prov01">southpeak games</value>
+    </publisher>
+    <developer>
+      <value provenance="prov02">spidermonk entertainment</value>
+      <value provenance="prov01">spidermonk entertainment</value>
+    </developer>
+    <id>
+      <value provenance="prov02">gbmb21776</value>
+      <value provenance="prov01">dbp15723707</value>
+      <value provenance="prov03">gdb17187</value>
+    </id>
+    <title>
+      <value provenance="prov02">roogoo</value>
+      <value provenance="prov01">roogoo</value>
+      <value provenance="prov03">roogoo</value>
+    </title>
+    <platform>
+      <value provenance="prov02">xbox 360 games store</value>
+      <value provenance="prov02">pc</value>
+      <value provenance="prov01">microsoft windows</value>
+      <value provenance="prov03">pc</value>
+    </platform>
+    <genre>
+      <genre provenance="prov01">
+        <id>dbp32393</id>
+        <name>puzzle video game</name>
+        <description>puzzle video games are a genre of video games that emphasize puzzle solving. the types of puzzles to be solved can test many problem solving skills including logic, pattern recognition, sequence solving, and word completion.</description>
+      </genre>
+    </genre>
+  </videogame>
+  <videogame>
+    <mode>
+      <value provenance="prov01">single-player video game</value>
+    </mode>
+    <computingmedia>
+      <value provenance="prov00">rom cartridge</value>
+    </computingmedia>
+    <release>
+      <value provenance="prov00">1983-12-01</value>
+    </release>
+    <description>
+      <value provenance="prov01">pole position ii (�?ール�?ジションii, p�?ru pojishon tsū) is a racing arcade game, released by namco in 1983. it runs on namco pole position hardware - and as the name suggests, it is the sequel to pole position, which was released in the previous year. as with its predecessor, namco licensed this game to atari for us manufacture and distribution, who also released a port of it as the pack-in game for their atari 7800 prosystem console.</value>
+    </description>
+    <publisher>
+      <value provenance="prov00">namco</value>
+      <value provenance="prov02">atari sa</value>
+    </publisher>
+    <developer>
+      <value provenance="prov02">namco</value>
+    </developer>
+    <id>
+      <value provenance="prov03">gdb4906</value>
+      <value provenance="prov01">dbp2952297</value>
+      <value provenance="prov02">gbmb3735</value>
+    </id>
+    <title>
+      <value provenance="prov03">pole position ii</value>
+      <value provenance="prov01">pole position ii</value>
+      <value provenance="prov02">pole position ii</value>
+    </title>
+    <platform>
+      <value provenance="prov03">atari 7800</value>
+      <value provenance="prov03">commodore 64</value>
+      <value provenance="prov01">arcade game</value>
+      <value provenance="prov02">commodore 64</value>
+      <value provenance="prov02">atari 7800</value>
+      <value provenance="prov02">arcade</value>
+      <value provenance="prov02">pc</value>
+      <value provenance="prov00">dos</value>
+      <value provenance="prov02">super cassette vision</value>
+    </platform>
+    <genre>
+      <genre provenance="prov01">
+        <id>dbp306085</id>
+        <name>racing video game</name>
+        <description>a racing video game is a genre of video games, either in the first-person or third-person perspective, in which the player partakes in a racing competition with any type of land, air, or sea vehicles. they may be based on anything from real-world racing leagues to entirely fantastical settings. in general, they can be distributed along a spectrum anywhere between hardcore simulations, and simpler arcade racing games. racing games may also fall under the category of sports games.</description>
+      </genre>
+    </genre>
+  </videogame>
+</data>
